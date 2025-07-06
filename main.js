@@ -25,3 +25,5 @@ const age = parseInt(prompt("Quanti anni hai?"));
 const kmPrice = 0.21;
 // Calcolo del prezzo per km
 const totalPrice = km * kmPrice;
+
+// sconto in base all'età se <18 20% con valore 0.20 (perché sto usando numeri decimali) se >65 sconto 40% con valore 0.40 (perché  sto usando numeri decimali)
