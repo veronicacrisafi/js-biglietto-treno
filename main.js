@@ -23,8 +23,8 @@ const age = parseInt(prompt("Quanti anni hai?"));
 
 // Prezzo per km
 const kmPrice = 0.21;
-// Calcolo del prezzo per km
-const totalPrice = km * kmPrice;
+// Calcolo del prezzo per km, cambiato const in let perché il prezzo varia e lasciando la variabile che non può essere riutilizzata produceva un'errore
+let totalPrice = km * kmPrice;
 
 // sconto in base all'età se <18 20% con valore 0.20 (perché sto usando numeri decimali) se >65 sconto 40% con valore 0.40 (perché  sto usando numeri decimali)
 if (age < 18) {
@@ -34,3 +34,5 @@ if (age < 18) {
   // Sconto del 40% per over 65 -= è un'operazione di programmazione che significa "sottrai e assegna", in pratica, calcolo il prezzo totale, poi il prezzo totale * lo sconto e il suo risultato lo sottraggo al prezzo totale
   totalPrice -= totalPrice * 0.4;
 }
+// totale con eventuali sconti e messaggio all'utente di avviso del prezzo. Per avere solo due decimali utilizzo toFixed(2) dove il 2 sta per i decimali che voglio vedere dopo la virgola, il + totalprice, l'ho usato perché permette di fare calcoli successivi senza problemi
+alert("Il prezzo del biglietto è: " + totalPrice.toFixed(2) + " €");
