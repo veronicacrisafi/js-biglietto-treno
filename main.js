@@ -13,3 +13,13 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 100km, 10 anni => prezzo corretto:  €16.80
 100km, 70 anni => prezzo corretto: €12.60
  */
+
+// richiesta km che l'utente vuole percorrere, parseFloat serve per convertire una stringa in un numero decimale (cioè un numero con la virgola)
+const km = parseFloat(prompt("Quanti chilometri vuoi percorrere?"));
+
+// richiesta età utente , parseInt è una funzione in JavaScript che serve a convertire una stringa in un numero intero, se volessi come dato sempre un numero nel caso in cui l'utente si sbagli
+
+const age = parseInt(prompt("Quanti anni hai?"));
+
+// Prezzo per km
+const kmPrice = 0.21;
