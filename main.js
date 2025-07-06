@@ -27,3 +27,10 @@ const kmPrice = 0.21;
 const totalPrice = km * kmPrice;
 
 // sconto in base all'età se <18 20% con valore 0.20 (perché sto usando numeri decimali) se >65 sconto 40% con valore 0.40 (perché  sto usando numeri decimali)
+if (age < 18) {
+  // Sconto del 20% -= è un'operazione di programmazione che significa "sottrai e assegna", in pratica, calcolo il prezzo totale, poi il prezzo totale * lo sconto e il suo risultato lo sottraggo al prezzo totale
+  totalPrice -= totalPrice * 0.2;
+} else if (age > 65) {
+  // Sconto del 40% per over 65 -= è un'operazione di programmazione che significa "sottrai e assegna", in pratica, calcolo il prezzo totale, poi il prezzo totale * lo sconto e il suo risultato lo sottraggo al prezzo totale
+  totalPrice -= totalPrice * 0.4;
+}
