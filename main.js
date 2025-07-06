@@ -23,3 +23,5 @@ const age = parseInt(prompt("Quanti anni hai?"));
 
 // Prezzo per km
 const kmPrice = 0.21;
+// Calcolo del prezzo per km
+const totalPrice = km * kmPrice;
